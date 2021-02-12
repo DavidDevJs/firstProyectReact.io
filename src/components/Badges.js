@@ -10,14 +10,14 @@ class Badge extends React.Component {
           <img src={confLogo} alt="Logo Conferencia" />
         </div>
 
-        <div>
+        <div className="Badge__section-name">
           <img
             className="Badge__avatar"
             src="https://www.gravatar.com/avatar?d=identicon"
             alt="avatar"
           />
           <h1>
-            David <br /> Gonzalez
+            David <br /> González
           </h1>
         </div>
 
@@ -26,7 +26,7 @@ class Badge extends React.Component {
           <p>@DavDev</p>
         </div>
 
-        <div className="Badge__footer">#PlatziConf</div>
+        <div className="Badge__footer"></div>
       </div>
     );
   }
