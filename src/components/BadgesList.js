@@ -7,7 +7,7 @@ class BadgesListItem extends React.Component {
       <div className="BadgesListItem">
         <img
           className="BadgesListItem__avatar"
-          src={this.props.avatar_url}
+          src={this.props.avatarUrl}
           alt={`${this.props.badge.firstName} ${this.props.badge.lastName}`}
         />
 
