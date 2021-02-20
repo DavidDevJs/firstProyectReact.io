@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from '../components/Navbar';
 import './styles/Badges.css';
 import confLofo from '../images/badge-header.svg';
 import BadgesList from '../components/BadgesList';
+import { Link } from 'react-router-dom';
 
 class Badges extends React.Component {
   state = {
@@ -15,7 +15,7 @@ class Badges extends React.Component {
         jobTitle: 'Legacy Brand Director',
         twitter: 'FredaGrady22221-7573',
         avatarUrl:
-          'https://www.google.com/url?sa=i&url=https%3A%2F%2Flinguisticauprrp.wordpress.com%2Fperfil-generico%2F&psig=AOvVaw1U1qCY2_AIQhJrv3E3-oyk&ust=1613313656771000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjv8fmL5-4CFQAAAAAdAAAAABAE',
+          'https://www.gravatar.com/avatar/e74e87d40e55b9ff9791c78892e55cb7?d=identicon',
       },
       {
         id: 'd00d3614-101a-44ca-b6c2-0be075aeed3d',
@@ -25,7 +25,7 @@ class Badges extends React.Component {
         jobTitle: 'Human Research Architect',
         twitter: 'MajorRodriguez61545',
         avatarUrl:
-          'https://www.google.com/url?sa=i&url=https%3A%2F%2Flinguisticauprrp.wordpress.com%2Fperfil-generico%2F&psig=AOvVaw1U1qCY2_AIQhJrv3E3-oyk&ust=1613313656771000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjv8fmL5-4CFQAAAAAdAAAAABAE',
+          'https://www.gravatar.com/avatar/e74e87d40e55b9ff9791c78892e55cb7?d=identicon',
       },
       {
         id: '63c03386-33a2-4512-9ac1-354ad7bec5e9',
@@ -35,16 +35,14 @@ class Badges extends React.Component {
         jobTitle: 'National Markets Officer',
         twitter: 'DaphneyTorphy96105',
         avatarUrl:
-          'https://www.google.com/url?sa=i&url=https%3A%2F%2Flinguisticauprrp.wordpress.com%2Fperfil-generico%2F&psig=AOvVaw1U1qCY2_AIQhJrv3E3-oyk&ust=1613313656771000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjv8fmL5-4CFQAAAAAdAAAAABAE',
+          'https://www.gravatar.com/avatar/e74e87d40e55b9ff9791c78892e55cb7?d=identicon',
       },
     ],
   };
 
   render() {
     return (
-      <div>
-        <NavBar />
-
+      <React.Fragment>
         <div className="Badges">
           <div className="Badges__hero">
             <div className="Badges__container">
@@ -58,9 +56,9 @@ class Badges extends React.Component {
         </div>
         <div className="Badge__container">
           <div className="Badges__buttons">
-            <a href="/badges/new/pending" className="btn btn-primary">
+            <Link to="/badges/new" className="btn btn-primary mx-auto">
               New Badge
-            </a>
+            </Link>
           </div>
 
           <div className="Badges__list">
@@ -69,7 +67,7 @@ class Badges extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
