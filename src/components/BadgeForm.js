@@ -60,7 +60,6 @@ class BadgeForm extends React.Component {
               type="email"
               name="email"
               value={this.props.formValues.email}
-              avatarUrl=""
             />
           </div>
 
