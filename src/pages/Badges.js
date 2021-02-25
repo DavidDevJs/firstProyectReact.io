@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/Badges.css';
 import confLofo from '../images/badge-header.svg';
 import BadgesList from '../components/BadgesList';
+import NotFound from './NotFound';
 import { Link } from 'react-router-dom';
 import api from '../api';
 import PageLoading from '../components/PageLoading';
@@ -34,7 +35,7 @@ class Badges extends React.Component {
     }
 
     if (this.state.error) {
-      return `Error: ${this.state.error.message}`;
+      return <NotFound />;
     }
 
     return (
