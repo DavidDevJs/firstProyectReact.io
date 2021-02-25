@@ -1,7 +1,6 @@
 import React from 'react';
 import confLogo from '../images/badge-header.svg';
 import './styles/Badge.css';
-import avatar from '../images/perfil.jpg';
 import Gravatar from '../components/Gravatar';
 
 class Badge extends React.Component {
